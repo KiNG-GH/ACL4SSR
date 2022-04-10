@@ -40,7 +40,7 @@ mode: rule
 # Clash 默认将日志输出至 STDOUT
 # 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
 # 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
-log-level: silent
+log-level: debug
 
 # clash 的 RESTful API 监听地址
 external-controller: 127.0.0.1:9090
@@ -77,8 +77,11 @@ dns:
   default-nameserver:
     - 223.5.5.5
     - 114.114.114.114
-  enhanced-mode: fake-ip # 或 redir-host
-  fake-ip-range: 198.18.0.1/16 # Fake IP 地址池 (CIDR 形式)
+    - 180.76.76.76
+  enhanced-mode: fake-ip 
+  # 或 redir-host
+  fake-ip-range: 198.18.0.1/16 
+  # Fake IP 地址池 (CIDR 形式)
   # use-hosts: true # 查询 hosts 并返回 IP 记录
 
   # 在以下列表的域名将不会被解析为 fake ip，这些域名相关的解析请求将会返回它们真实的 IP 地址
