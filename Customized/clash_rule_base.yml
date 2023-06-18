@@ -78,3 +78,7 @@ dns:
     #   - '+.google.com'
     #   - '+.facebook.com'
     #   - '+.youtube.com'
+
+rules:
+ # AmyTelecom Subscription
+ - DOMAIN-SUFFIX,nqcbls.xyz,🎯 全球直连
