@@ -82,3 +82,5 @@ dns:
 rules:
  # AmyTelecom Subscription
  - DOMAIN-SUFFIX,nqcbls.xyz,🎯 全球直连
+ # ChatGPT Update
+ - DOMAIN-SUFFIX,chatgpt.com, 🚀 节点选择
